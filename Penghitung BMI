@@ -1,0 +1,45 @@
+// Nama : Zaky Zulfa M A
+// NIM : 32602000065
+
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author zakym
+ */
+public class BB_Code {
+        private double tb,bb,ttl;
+    private String inf;
+
+        public void setTb(double tb) {
+        this.tb = tb/100;
+    }
+
+    public void setBb(double bb) {
+        this.bb = bb;
+    }
+    public double getTtl() {
+        return ttl = this.bb / (this.tb*this.tb);
+    }
+    public String getInf() {
+        return inf;
+    }
+
+
+
+   void hasilinf(){
+       if (getTtl() < 18.5){
+           this.inf = "Anda Memiliki Masalah Kekurangan Berat Badan";
+       }else if(getTtl() < 24.9){
+           this.inf = "Anda Memiliki Berat Badan Ideal";
+       }else if(getTtl() < 29.9){
+           this.inf = "Anda Memiliki Berat Badan Berlebih";
+       }else if(getTtl() > 30.0){
+           this.inf = "Anda Memiliki Penyakit Obesitas";
+       }
+   }
+}
