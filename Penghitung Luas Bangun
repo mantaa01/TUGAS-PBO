@@ -1,0 +1,62 @@
+// Nama : Zaky Zulfa M A
+// NIM : 32602000065
+
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author zakym
+ */
+public class Bangun_Code {
+    private Double s,a,t,r,HasilP,HasilS,HasilL;
+    private String topup;
+
+    public String getTopup() {
+        return topup;
+    }
+    
+    public Double getHasilP() {
+        return HasilP = this.s*this.s;
+    }
+
+    public Double getHasilS() {
+        return HasilS = 0.5*(this.a*this.t);
+    }
+
+    public Double getHasilL() {
+        return HasilL = 3.14*(this.r*this.r);
+    }
+
+    public void setS(Double s) {
+        this.s = s;
+    }
+
+    public void setA(Double a) {
+        this.a = a;
+    }
+
+    public void setT(Double t) {
+        this.t = t;
+    }
+
+    public void setR(Double r) {
+        this.r = r;
+    }
+    void HasilP(){
+        if (getHasilP() > 0){
+            this.topup = "Luas Persegi =" + getHasilP();
+        }
+    }void HasilS(){
+        if (getHasilS() > 0){
+            this.topup = "Luas Segitiga =" + getHasilS();
+        }
+    }void HasilL(){
+        if (getHasilL() > 0){
+            this.topup = "Luas Lingkaran =" + getHasilL();
+        }
+    }
+}
